@@ -11,3 +11,12 @@ label{
 form{
     margin: 30px;
 }
+#button-well{
+    display: inline;
+    padding: 10px;
+    margin: 1px;
+}
+/* button{ 
+    padding-left: 4px;
+    margin: 200px;
+} */

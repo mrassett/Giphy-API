@@ -1,39 +1,36 @@
-//create array, loop over each string and create standing buttons from the string objects
-//create field to type into
-//write function to dynamically create buttons upon new user entry - wrap around clicking submit 
+"use strict";
+
+
+
 //AJAX call to GIPHY using key provided
 //iterate AJAX call around button click to pull 10 GIFs from GIPHY
 //write function to click start video
 //write function to click stop vide
-let existingButtons = ["Black Mirror", "Narcos", "Stranger Things", "13 Reasons Why", "Ozark", "Shameless","Mindhunter"];
+let existingButtons = ["Black Mirror", "Narcos", "Stranger Things", "13 Reasons Why", "Ozark", "Shameless"];
 
-$( document ).ready(function() {
-  
+
+//create array, loop over each string and create standing buttons from the string objects
+
     function buttonCreate() {
         $("#button-well").empty(); 
         for (let i = 0; i < existingButtons.length; i++) {
                 let generateButton = $("<button>");
-        
-                    generateButton.attr({
-                    "class" : "show",
-                    "data-name": existingButtons[i],
-                    text : existingButtons[i]
-                    });
-                    console.log(generateButton);
-
-        $("#button-well").append(generateButton);
+                generateButton.html(existingButtons[i]);
+                console.log(generateButton);
+                $("#button-well").append(generateButton);
+        }
     }
-}
+//write function to dynamically create buttons upon new user entry - wrap around clicking submit 
 
-    $("submit").on("click", function(event){
+    $("#add-button").on("click", function(event){
         event.preventDefault();
-        let tvShowEntry = $("enter-show").val();
+        let tvShowEntry = $("#enter-show").val();
         existingButtons.push(tvShowEntry);
         buttonCreate();
         console.log(tvShowEntry);
-})
-buttonCreate();
-console.log(buttonCreate);
-
+        $("#enter-show").empty();
 });
+console.log(buttonCreate);
+buttonCreate();
 
+//AJAX call to GIPHY using key provided
