@@ -1,0 +1,13 @@
+.form-group{
+    line-height: 2em;
+}
+label{ 
+    font-size: 20px;
+}
+#enter-show{ 
+    font-size: 10px;
+    width: 60%;
+}
+form{
+    margin: 30px;
+}
