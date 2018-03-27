@@ -9,7 +9,7 @@ let existingButtons = ["Black Mirror", "Narcos", "Stranger Things", "13 Reasons 
     function buttonCreate() {
         $("#button-well").empty(); 
         for (let i = 0; i < existingButtons.length; i++) {
-                let generateButton = $("<button>");
+                let generateButton = $("<button class = 'tv'>");
                 generateButton.addClass("tv");
                 generateButton.addClass("btn btn-info")
                 generateButton.attr("data-name", existingButtons[i]);
@@ -35,11 +35,10 @@ let existingButtons = ["Black Mirror", "Narcos", "Stranger Things", "13 Reasons 
 
 
 // Event listener for all button elements
-$("button").on("click", function () {
+$(".tv").on("click", function () {
 
     let netflix = $(this).attr("data-name");
     // let netflix = $(this).attr("data-tv");
-
 //AJAX call to GIPHY using key provided
 apiKey = "TognscCDCvIkZorbQ3YSYr1F937ccMw7";
 
