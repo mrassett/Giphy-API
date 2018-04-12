@@ -26,6 +26,7 @@ let existingButtons = ["Black Mirror", "Narcos", "Stranger Things", "13 Reasons 
         existingButtons.push(tvShowEntry);
         buttonCreate();
         console.log(tvShowEntry);
+        // $("enter-show").val();
         $("#enter-show").empty();
 });
         buttonCreate();
@@ -33,9 +34,8 @@ let existingButtons = ["Black Mirror", "Narcos", "Stranger Things", "13 Reasons 
 
 
 
-
-// Event listener for all button elements
-$(".tv").on("click", function () {
+//
+$("#button-well").on("click", ".tv", function () {
 
     let netflix = $(this).attr("data-name");
     // let netflix = $(this).attr("data-tv");
