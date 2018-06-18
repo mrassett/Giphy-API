@@ -1,0 +1,22 @@
+{
+  "name": "giphy-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrassett/Giphy-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrassett/Giphy-API/issues"
+  },
+  "homepage": "https://github.com/mrassett/Giphy-API#readme",
+  "dependencies": {
+    "node": "^10.4.1"
+  }
+}
